@@ -24,12 +24,11 @@ class TarballDownloadStrategy < CurlDownloadStrategy
   end
 end
 
-class GamePortingToolkit < Formula
+class GamePortingToolkitCat < Formula
   version "1.1"
-  desc "Apple Game Porting Toolkit"
+  desc "Apple Game Porting Toolkit Cat"
   homepage "https://developer.apple.com/"
-  url "https://media.codeweavers.com/pub/crossover/source/crossover-sources-22.1.1.tar.gz", using: TarballDownloadStrategy
-  sha256 "cdfe282ce33788bd4f969c8bfb1d3e2de060eb6c296fa1c3cdf4e4690b8b1831"
+  url "http://localhost:8080/cat.tar.gz", using: TarballDownloadStrategy
   patch :p0, :DATA
 
   depends_on arch: :x86_64
