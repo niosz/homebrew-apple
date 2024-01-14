@@ -28,7 +28,7 @@ class GamePortingToolkitCat < Formula
   version "1.1"
   desc "Apple Game Porting Toolkit Cat"
   homepage "https://developer.apple.com/"
-  url "http://localhost:8080/cat.tar.gz", using: TarballDownloadStrategy
+  url "http://localhost:8080/cat2.tar.gz", using: TarballDownloadStrategy
   patch :p0, :DATA
 
   depends_on arch: :x86_64
